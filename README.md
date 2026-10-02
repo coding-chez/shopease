@@ -1,16 +1,50 @@
-# React + Vite
+# ShopEase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Activity 1: React.js and CSS Website**
 
-Currently, two official plugins are available:
+ShopEase is a student-built storefront created for the introductory React activity. The project applies React and CSS to a practical website concept: a simple online shop for everyday essentials.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Activity Purpose
 
-## React Compiler
+This project demonstrates an initial, hands-on use of React before formal instruction on its concepts. It was developed to practice researching unfamiliar tools, organizing a website into reusable interface components, and using JavaScript interactions to make a page more dynamic.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Overview
 
-## Expanding the ESLint configuration
+The storefront presents a curated collection of home, accessories, stationery, and lifestyle products. Visitors can browse the collection, filter products by category, and manage items in a shopping bag.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Features
+
+- Responsive storefront layout styled with CSS
+- Product cards with images, categories, descriptions, and prices
+- Category filters for browsing the collection
+- Shopping bag with item counts, quantity controls, removal, and subtotal
+- Component-based UI built with React
+
+The checkout button is included as part of the storefront interface; this project does not connect to a payment or order-processing service. Product and hero images are loaded from Unsplash and require an internet connection.
+
+## Technologies
+
+- React
+- JavaScript
+- CSS
+- Vite
+
+## Run Locally
+
+Install dependencies and start the development server:
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL shown in the terminal to view the website.
+
+## Verification
+
+Create a production build and run the linter with:
+
+```bash
+npm run build
+npm run lint
+```
