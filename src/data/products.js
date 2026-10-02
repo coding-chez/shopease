@@ -1,10 +1,9 @@
-
 const products = [
   {
     id: 1,
     name: "Ceramic Coffee Mug",
     category: "Home",
-    price: 12.99,
+    price: 13.00,
     image: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600",
     description: "Minimal ceramic mug for your daily coffee."
   },
@@ -12,7 +11,7 @@ const products = [
     id: 2,
     name: "Canvas Tote Bag",
     category: "Accessories",
-    price: 18.99,
+    price: 19.99,
     image: "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600",
     description: "A simple everyday canvas carry bag."
   },
