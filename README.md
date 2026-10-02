@@ -12,6 +12,10 @@ This project demonstrates an initial, hands-on use of React before formal instru
 
 The storefront presents a curated collection of home, accessories, stationery, and lifestyle products. Visitors can browse the collection, filter products by category, and manage items in a shopping bag.
 
+
+<img width="1038" height="678" alt="Screenshot 2026-10-02 at 2 37 50 PM" src="https://github.com/user-attachments/assets/35f7f223-3f5b-4883-bda9-ccb1d9e07149" />
+
+
 ### Features
 
 - Responsive storefront layout styled with CSS
