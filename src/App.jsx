@@ -5,7 +5,6 @@ import ProductList from './components/ProductList'
 import Cart from './components/Cart'
 import Footer from './components/Footer'
 import products from './data/products'
-import './App.css'
 
 function App() {
   const [cartItems, setCartItems] = useState([])
