@@ -34,7 +34,7 @@ Product and hero images are loaded from Unsplash, so those images require an int
 
 ## Version History & Visuals
 
-This section documents the project’s appearance and main changes across learning activities. Add screenshots of each version to the `screenshots` folder and use the matching relative paths below.
+This section documents the project’s appearance and main changes across learning activities.
 
 ### Version 1 — Activity 1: Initial Storefront
 
