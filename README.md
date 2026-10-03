@@ -36,13 +36,13 @@ Product and hero images are loaded from Unsplash, so those images require an int
 
 This section documents the project’s appearance and main changes across learning activities.
 
-### Version 1 — Activity 1: Initial Storefront
+### Version 1.0 | Activity 1: Initial Storefront
 
 Created the initial ShopEase storefront using React and CSS. This version introduced the product catalogue, category filters, and shopping bag interface.
 
 [Version 1: Initial ShopEase storefront]<img width="1038" alt="Screenshot 2026-10-02 at 2 37 50 PM" src="https://github.com/user-attachments/assets/35f7f223-3f5b-4883-bda9-ccb1d9e07149" /> <img width="1038" alt="Screenshot 2026-10-02 at 2 42 48 PM" src="https://github.com/user-attachments/assets/61c9c118-1942-4123-8d6d-7791d975368b" />
 
-### Version 2 — Activity 2: Tailwind Migration
+### Version 2.0 | Activity 2: Tailwind Migration
 
 Migrated the storefront styling from pure CSS to Tailwind CSS. Added product search and a clear-shopping-bag action while retaining the product browsing and cart features.
 
@@ -77,5 +77,4 @@ npm run dev
 
 Open the local URL printed in the terminal—Vite commonly uses `http://localhost:5173/`.
 
-Stop the server by focusing the terminal and pressing **Ctrl+C**.
-
+Stop the server by focusing the terminal and pressing **Ctrl+C**.s
