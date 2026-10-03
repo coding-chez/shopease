@@ -47,6 +47,10 @@ function App() {
     )
   }
 
+  const clearCart = () => {
+    setCartItems([])
+  }
+
   const changeQuantity = (productId, quantity) => {
     if (quantity <= 0) {
       removeFromCart(productId)
@@ -96,6 +100,7 @@ function App() {
           onClose={() => setIsCartOpen(false)}
           onRemove={removeFromCart}
           onQuantityChange={changeQuantity}
+          onClear={clearCart}
         />
       )}
     </>

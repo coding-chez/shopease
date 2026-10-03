@@ -1,4 +1,4 @@
-function Cart({ cartItems, onClose, onRemove, onQuantityChange }) {
+function Cart({ cartItems, onClose, onRemove, onQuantityChange, onClear }) {
   const subtotal = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
     0,
@@ -14,7 +14,17 @@ function Cart({ cartItems, onClose, onRemove, onQuantityChange }) {
         onClick={(event) => event.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-[#eee] pb-5">
-          <h2 className="text-[22px] font-semibold">Your Shopping Bag</h2>
+        <h2 className="text-[22px] font-semibold">Your Shopping Bag</h2>
+
+        <div className="flex items-center gap-4">
+          {cartItems.length > 0 && (
+            <button
+              className="text-sm text-[#777] underline hover:text-[#222]"
+              onClick={onClear}
+            >
+              Clear bag
+            </button>
+          )}
 
           <button
             className="text-[28px] leading-none text-[#333]"
@@ -24,6 +34,7 @@ function Cart({ cartItems, onClose, onRemove, onQuantityChange }) {
             &times;
           </button>
         </div>
+      </div>
 
         {cartItems.length === 0 ? (
           <p className="py-[50px] text-center text-[#777]">
