@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import products from './data/products'
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState('')
   const [cartItems, setCartItems] = useState([])
   const [isCartOpen, setIsCartOpen] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState('All')
@@ -81,8 +82,10 @@ function App() {
       <ProductList
         products={products}
         selectedCategory={selectedCategory}
+        searchTerm={searchTerm}
         onAddToCart={addToCart}
         onSelectCategory={setSelectedCategory}
+        onSearchChange={setSearchTerm}
       />
 
       <Footer />

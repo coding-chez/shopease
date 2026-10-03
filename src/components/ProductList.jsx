@@ -3,13 +3,23 @@ import ProductCard from './ProductCard'
 function ProductList({
   products,
   selectedCategory,
+  searchTerm,
   onAddToCart,
   onSelectCategory,
+  onSearchChange,
 }) {
-  const filteredProducts =
-    selectedCategory === 'All'
-      ? products
-      : products.filter((product) => product.category === selectedCategory)
+  const normalizedSearch = searchTerm.trim().toLowerCase()
+
+  const filteredProducts = products.filter((product) => {
+    const matchesCategory =
+      selectedCategory === 'All' || product.category === selectedCategory
+
+    const matchesSearch =
+      product.name.toLowerCase().includes(normalizedSearch) ||
+      product.category.toLowerCase().includes(normalizedSearch)
+
+    return matchesCategory && matchesSearch
+  })
 
   return (
     <section
@@ -26,6 +36,15 @@ function ProductList({
           </h2>
         </div>
       </div>
+
+      <input
+        type="search"
+        value={searchTerm}
+        onChange={(event) => onSearchChange(event.target.value)}
+        placeholder="Search products..."
+        aria-label="Search products"
+        className="mb-5 w-full max-w-md rounded border border-[#ddd] px-4 py-3 text-sm outline-none focus:border-[#222]"
+      />
 
       <div className="mb-10 flex gap-[10px] overflow-x-auto pb-[5px] sm:flex-wrap">
         {['All', 'Home', 'Accessories', 'Stationery', 'Lifestyle'].map(
@@ -58,6 +77,12 @@ function ProductList({
           />
         ))}
       </div>
+
+      {filteredProducts.length === 0 && (
+        <p className="py-10 text-center text-[#777]">
+          No products match your search.
+        </p>
+      )}
     </section>
   )
 }
